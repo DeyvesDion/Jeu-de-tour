@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--CSS-->
+    <!--Fontawersome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" />
+    <!-- bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- font -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Pacifico|Fredericka+the+Great|Raleway|Monoton" />
+    <!--Style-->
+    <link rel="stylesheet" href="./style.css">
+    <title>Combat à mort pour être la reine du royaume</title>
+    <link rel="shortcut icon" href="./images/castle.png">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <article class="main">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div class="button">
+                    <button id="attack" class="btn btn-warning fight" disabled>Attaquer</button>
+                    <button id="defend" class="btn btn-warning fight" disabled>Se defendre</button>
+                </div>
+                <span class="playerName" id="playerName"></span>
+                <span class="result" id="result"></span></br>
+
+                <div class="map"></div>
+            </div>
+        </article>
+        <aside class="aside cleopatre">
+            <h2>Cléopatre</h2>
+            <img src="images/cleopatre.svg" alt="Cléopatre"></img>
+            <h3>HP</h3>
+            <div id="player0Hp"></div>
+            <h3>ARME</h3>
+            <div id="player0Weapon" style="text-transform: uppercase;"></div>
+            <h3>DEGATS</h3>
+            <div id="player0WeaponDamage"></div>
+        </aside>
+
+        <aside class="aside queen">
+            <h2>&nbsp&nbspqueen&nbsp&nbsp</h2>
+            <img src="images/queen.svg" alt="queen"></img>
+            <h3>HP</h3>
+            <div id="player1Hp"></div>
+            <h3>ARME</h3>
+            <div id="player1Weapon" style="text-transform: uppercase;"></div>
+            <h3>DEGATS</h3>
+            <div id="player1WeaponDamage"></div>
+        </aside>
+    </div>
+
+    <div class="box">
+        <div class="weapon">
+            <img src="images/dagger.svg" alt="dagger" title="Dagger"></img></br>
+            <p>DAGGER</br>10 points de dégat</p>
+        </div>
+        <div class="weapon">
+            <img src="images/bow.svg" alt="bow" title="Bow"></img></br>
+            <p>BOW</br>12 points de dégat</p>
+        </div>
+        <div class="weapon">
+            <img src="images/sword.svg" alt="sword" title="Sword"></img></br>
+            <p>SWORD</br>20 points de dégat</p>
+        </div>
+        <div class="weapon">
+            <img src="images/saber.svg" alt="saber" title="Saber"></img></br>
+            <p>SABER</br>16 points de dégat</p>
+        </div>
+        <div class="weapon">
+            <img src="images/axe.svg" alt="axe" title="Axe"></img></br>
+            <p>AXE</br> 06 points de dégat</p>
+        </div>
+    </div>
+
+    <script src="./weapon.js"></script>
+    <script src="./player.js"></script>
+    <script src="./map.js"></script>
+</body>
+
+</html>
